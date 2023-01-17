@@ -1,0 +1,16 @@
+{
+  "name": "digifist-case",
+  "version": "1.0.0",
+  "description": "DigiFist case study for job interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emre Oztunc",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
