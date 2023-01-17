@@ -1,2 +1,1 @@
-# df-01
-DigiFist case
+This is the initial document.
