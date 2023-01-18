@@ -10,45 +10,66 @@ module.exports = [
             filename: 'main.js',
             path: path.resolve(__dirname, 'public/js'),
         },
+        resolve: {
+            alias: {
+                bootstrap: path.resolve(__dirname, './node_modules/bootstrap'),
+            }
+        },
         devtool: 'source-map'
     },
     {
         mode: 'development',
-        name: 'css',
-        optimization: {
-            splitChunks: {
-                cacheGroups: {
-                    styles: {
-                        name: "styles",
-                        test: /\.css$/,
-                        chunks: "all",
-                        enforce: true,
-                    },
-                },
-            },
-        },
+        name: 'scss',
         entry: {
             styles: [
-                path.resolve(__dirname, './src/css/common.css'),
-                path.resolve(__dirname, './src/css/slider.css'),
+                path.resolve(__dirname, './src/css/pages/scsstrial.scss')
             ]
         },
         output: {
              path: path.resolve(__dirname, 'public/css'),
         },
-        plugins: [new MiniCssExtractPlugin()],
+        plugins: [
+            new MiniCssExtractPlugin({
+                filename: '[name].css'
+            }),
+        ],
         module: {
             rules: [
                 {
                     test: /\.(sa|sc|c)ss$/,
                     use: [
+                        MiniCssExtractPlugin.loader,
+                        { 
+                            loader: "css-loader", 
+                            options: { 
+                                url: false, 
+                                sourceMap: true 
+                            } 
+                        }, 
                         {
-                            loader: MiniCssExtractPlugin.loader,
+                            loader: 'sass-loader',
                             options: {
-                                publicPath: "./public/"
+                                sourceMap: true,
+                                //importer: sassJsonImporter(),
+                                sassOptions: {
+                                    includePaths: [
+                                        path.resolve(process.cwd(), './node_modules/')
+                                    ]
+                                }
                             }
-                        },
-                        'css-loader'
+                        }
+                        // ,
+                        // {
+                        //     loader: 'postcss-loader',
+                        //     options: {
+                        //         sourceMap: true,
+                        //         plugins: [
+                        //             [
+                        //                 "autoprefixer"
+                        //             ]
+                        //         ]
+                        //     }
+                        // }
                     ],
                 }
             ]
