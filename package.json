@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "srv": "npm run build & node ./server/server.js 3003",
+    "startCleanServer": "npm run buildAll && node -e \"setTimeout(() => process.exit(0), 2000)\" && node ./server/server.js 3005 && node -e \"setTimeout(() => process.exit(0), 2000)\" && open http://127.0.0.1:3005",
     "strt": "webpack",
     "js:cleanDist": "rm -rf public/js/*",
     "css:cleanDist": "rm -rf public/css/*",
