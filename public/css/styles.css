@@ -4,23 +4,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Avenir';
-  src: url("../fonts/Avenir.ttc") format("ttf"); }
+  src: url("/df-01/fonts/Avenir.ttc") format("ttf"); }
 
 @font-face {
   font-family: 'ITCAvantGardePro-BK';
-  src: url("../fonts/ITCAvantGardePro-Bk.otf") format("opentype"); }
+  src: url("/df-01/fonts/ITCAvantGardePro-Bk.otf") format("opentype"); }
 
 @font-face {
   font-family: 'ITCAvantGardePro-Bold';
-  src: url("../fonts/ITCAvantGardePro-Bold.otf") format("opentype"); }
+  src: url("/df-01/fonts/ITCAvantGardePro-Bold.otf") format("opentype"); }
 
 @font-face {
   font-family: 'ITCAvantGardePro-Demi';
-  src: url("../fonts/ITCAvantGardePro-Demi.otf") format("opentype"); }
+  src: url("/df-01/fonts/ITCAvantGardePro-Demi.otf") format("opentype"); }
 
 @font-face {
   font-family: 'ITCAvantGardePro-Md';
-  src: url("../fonts/ITCAvantGardePro-Md.otf") format("opentype"); }
+  src: url("/df-01/fonts/ITCAvantGardePro-Md.otf") format("opentype"); }
 
 body {
   background-color: #fff; }
@@ -283,13 +283,13 @@ body {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff url("/df-01/images/ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("/df-01/fonts/slick.eot");
+  src: url("/df-01/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/df-01/fonts/slick.woff") format("woff"), url("/df-01/fonts/slick.ttf") format("truetype"), url("/df-01/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -462,8 +462,8 @@ body {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("/df-01/fonts/slick.eot");
+  src: url("/df-01/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/df-01/fonts/slick.woff") format("woff"), url("/df-01/fonts/slick.ttf") format("truetype"), url("/df-01/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -471,7 +471,7 @@ body {
   Slider
 */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff url("/df-01/ajax-loader.gif") center center no-repeat; }
 
 /*=================================
   Previous and Next icon buttons
@@ -664,8 +664,8 @@ body {
 
 @font-face {
   font-family: "slick";
-  src: url("./fonts/../../fonts/slick.eot");
-  src: url("./fonts/../../fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/../../fonts/slick.woff") format("woff"), url("./fonts/../../fonts/slick.ttf") format("truetype"), url("./fonts/../../fonts/slick.svg#slick") format("svg");
+  src: url("/df-01/fonts/slick.eot");
+  src: url("/df-01/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/df-01/fonts/slick.woff") format("woff"), url("/df-01/fonts/slick.ttf") format("truetype"), url("/df-01/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -676,7 +676,7 @@ body {
   --db-carousel-arrow-icon-width: 1.5rem; }
 
 .slick-loading .slick-list {
-  background: #fff url("./../images/ajax-loader.gif") center center no-repeat; }
+  background: #fff url("/df-01/images/ajax-loader.gif") center center no-repeat; }
 
 .slick-arrow {
   background-color: transparent;
@@ -707,7 +707,7 @@ body {
   height: 100%; }
 
 .slick-custom-arrow {
-  background: url("../images/arrow-right.png") no-repeat 15px;
+  background: url("/df-01/images/arrow-right.png") no-repeat 15px;
   display: block;
   width: 40px;
   height: 40px;
