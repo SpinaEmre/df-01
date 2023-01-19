@@ -15,12 +15,14 @@ then have a build and start the server using this script:
 npm run startCleanServer
 </pre>
 
-If you change something on runtime and want to see the results immediately, no need to restart the server, you can use this script:
+If you change something on runtime and want to see the results immediately, there is no need to restart the server, you can use this script:
 <pre>
 npm run strt
 </pre>
+(I know, strt doesn't make sense but let's keep it this way)
 
 
-Thanks for patience. 
+Thanks for your patience. 
 
+Cheers, 
 Emre
