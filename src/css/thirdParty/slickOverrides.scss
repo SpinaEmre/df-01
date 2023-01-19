@@ -1,0 +1,101 @@
+@if $slick-font-family == "slick" {
+    @font-face {
+        font-family: "slick";
+        src: slick-font-url("../../fonts/slick.eot");
+        src: slick-font-url("../../fonts/slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../../fonts/slick.woff") format("woff"), slick-font-url("../../fonts/slick.ttf") format("truetype"), slick-font-url("../../fonts/slick.svg#slick") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+$carousel-arrow-icon-dark: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 40' fill='none'%3E%3Cpath stroke='#000000' stroke-linecap='round' d='M19 0.5L1.5 19.75L19 39'/%3E%3C/svg%3E");
+$carousel-arrow-icon-light: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 40' fill='none'%3E%3Cpath stroke='#000000' stroke-linecap='round' d='M19 0.5L1.5 19.75L19 39'/%3E%3C/svg%3E");
+$carousel-arrow-icon-height: 1.56rem;
+$carousel-arrow-icon-width: 1.5rem;
+
+.slick {
+    --db-carousel-arrow-icon-dark: #{$carousel-arrow-icon-dark};
+    --db-carousel-arrow-icon-light: #{$carousel-arrow-icon-light};
+    --db-carousel-arrow-icon-height: #{$carousel-arrow-icon-height};
+    --db-carousel-arrow-icon-width: #{$carousel-arrow-icon-width};
+}
+
+.slick-list {
+
+    .slick-loading & {
+        background: #fff slick-image-url("../images/ajax-loader.gif") center center no-repeat;
+    }
+}
+
+.slick-arrow {
+    background-color: transparent;
+    background-color: red;
+    border: 0;
+    height: var(--db-carousel-arrow-icon-height);
+    width: var(--db-carousel-arrow-icon-width);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-next {
+    right: 38px;
+}
+
+.slick-prev {
+    left: 38px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.slick-prev-icon,
+.slick-next-icon {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 40' fill='none'%3E%3Cpath stroke='#000000' stroke-linecap='round' d='M19 0.5L1.5 19.75L19 39'/%3E%3C/svg%3E") no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-custom-arrow {
+    background: url('../images/arrow-right.png') no-repeat 15px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    @media (max-width: 767px) {
+        display: none;
+    }
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+}
+
+.slick-track .slick-slide:first-child .product-card {
+    margin-left: 24px !important;
+    
+    @media (min-width: 768px) {
+        margin-left: 106px !important;
+    }
+}
+
+.slick-track .slick-slide:last-child .product-card {
+    margin-right: 24px !important;
+    
+    @media (min-width: 768px) {
+        margin-left: 24px !important;
+    }
+}
+
+.slick-list {
+    @media (max-width: 768px) {
+        margin-top: -20px !important;
+    }
+}

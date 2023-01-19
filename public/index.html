@@ -5,15 +5,12 @@
         <meta charset=UTF-8 />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
 
         <!-- Scripts -->
-
+        <script src="/js/main.js"></script>
         <!-- Styles -->
         <link rel="stylesheet" href="/css/styles.css">
     </head>
-
-
     <body>
         <div class="container-xxl mx-0 px-0">
             <div class="row product-category mx-0">
@@ -31,33 +28,218 @@
                         <h5>At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida cursus.</h5>
                         <a href="/">Shop All everyday Items</a>
                     </div>
-                    <div class="container-fluid">
-                        Burasi icerik
+                    <div class="product-category__carousel-container container-fluid px-0">
+                        <div class="product-category__carousel-container">
+                            <div class="product-category__carousel-wrapper">
+                                <div class="slick image-slider" data-slick='{
+                                    "slidesToShow": 2.3, 
+                                    "slidesToScroll": 1, 
+                                    "dots": false, 
+                                    "arrows": true,
+                                    "infinite": false,
+                                    "autoPlay": false,
+                                    "centerMode": false,
+                                    "variableWidth": true,
+                                    "prevArrow": "<img class="a-left control-c prev slick-prev" src="../images/shoe_story/arrow-left.png">",
+                                    "nextArrow": "<img class="a-right control-c next slick-next" src="../images/shoe_story/arrow-right.png">",
+                                    "responsive": [
+                                        {"breakpoint": 480, "settings": { "dots": false, "arrows": false, "slidesToShow": 1.3, "slidesToScroll": 1}}, 
+                                        { "breakpoint": 768, "settings": { "dots": false, "arrows": true, "slidesToShow": 2.3, "slidesToScroll": 1}}, 
+                                        { "breakpoint": 1024, "settings": { "dots": false, "arrows": true, "slidesToShow": 2.3, "slidesToScroll": 1}}, 
+                                        { "breakpoint": 1200, "settings": { "dots": false, "arrows": true, "slidesToShow": 2.3, "slidesToScroll": 1}}
+                                    ]
+                                    }'>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product02-car-sm.png">
+                                                    <img src="/images/product02-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    Organic Skinny High Waist Jeans
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product01-car-sm.png">
+                                                    <img src="/images/product01-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    365 Signature Hoodie
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product02-car-sm.png">
+                                                    <img src="/images/product02-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    Organic Skinny High Waist Jeans
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product01-car-sm.png">
+                                                    <img src="/images/product01-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    365 Signature Hoodie
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product02-car-sm.png">
+                                                    <img src="/images/product02-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    Organic Skinny High Waist Jeans
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product01-car-sm.png">
+                                                    <img src="/images/product01-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title">
+                                                    365 Signature Hoodie
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="product-card mx-3">
+                                            <div class="product-card__image-container">
+                                                <picture>
+                                                    <source media="(max-width: 360px)" srcset="/images/product02-car-sm.png">
+                                                    <img src="/images/product02-car-md.png" class="product-card__primary-image" alt="Everyday items">
+                                                </picture>
+                                            </div>
+                                            <div class="product-card__details row">
+                                                <div class="product-card__title col-12">
+                                                    Organic Skinny High Waist Jeans
+                                                </div>
+                                                <div class="product-card__price col-12 col-md-6">
+                                                    €33.95
+                                                </div>
+                                                <div class="product-card__color-options col-12 col-md-6">
+                                                    <div class="product-card__color-options-wrapper">
+                                                        <span class="product-color-option selected blue-option"></span>
+                                                        <span class="product-color-option orange-option"></span>
+                                                        <span class="product-color-option purple-option"></span>
+                                                        <span class="product-color-option green-option"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>        
-        <section class="">
-
-
-
-        </section>
-
-        <div class="row">
-            <div class="col-12">
-                Deneme
-            </div>
-            <div class="col-6">
-                Deneme1
-            </div>
-            <div class="col-6">
-                Deneme2
-            </div>
-        </div>
-
-
     </body>
     <footer>
-
+        <!-- Not yet -->
     </footer>
 </html>

@@ -1,7 +1,11 @@
 @import "../common/typography.scss";
 @import "../common/common.scss";
 @import "../components/product.scss";
-@import "../thirdParty/slider.scss";
+
+@import '../thirdParty/accessibleSlick.scss';
+@import "~@accessible360/accessible-slick/slick/slick-theme";
+@import "~@accessible360/accessible-slick/slick/accessible-slick-theme";
+@import '../thirdParty/slickOverrides.scss';
 
 //@import "bootstrap/scss/bootstrap.scss";
 
@@ -11,7 +15,6 @@
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-
 @import "../thirdParty/bootstrapOverrides.scss";
 
 @import "bootstrap/scss/root"; // Needed for layout
@@ -20,7 +23,6 @@
 // @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-
 
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
@@ -49,7 +51,6 @@
 // @import "bootstrap/scss/placeholders";
 
 // Helpers
-
 @import "bootstrap/scss/helpers";
 
 // Utilities

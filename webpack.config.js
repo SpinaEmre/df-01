@@ -50,7 +50,6 @@ module.exports = [
                             loader: 'sass-loader',
                             options: {
                                 sourceMap: true,
-                                //importer: sassJsonImporter(),
                                 sassOptions: {
                                     includePaths: [
                                         path.resolve(process.cwd(), './node_modules/')
@@ -58,18 +57,6 @@ module.exports = [
                                 }
                             }
                         }
-                        // ,
-                        // {
-                        //     loader: 'postcss-loader',
-                        //     options: {
-                        //         sourceMap: true,
-                        //         plugins: [
-                        //             [
-                        //                 "autoprefixer"
-                        //             ]
-                        //         ]
-                        //     }
-                        // }
                     ],
                 }
             ]
